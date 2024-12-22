@@ -6,7 +6,6 @@ import re
 from dotenv import load_dotenv
 from fastapi.middleware.cors import CORSMiddleware
 
-
 app = FastAPI()
 
 app.add_middleware(
@@ -141,3 +140,4 @@ def generate_docstring(request: DocstringRequest):
 #         }
 #     except Exception as e:
 #         raise HTTPException(status_code=500, detail=f"Error: {str(e)}")
+
